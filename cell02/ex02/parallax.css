@@ -1,0 +1,45 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.parallax {
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.middle-m {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.mid-s {
+  background-color: white;
+  color: black;
+  font-size: 2em;
+  height: 600px;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg1 {
+  background-image: url("https://ichef.bbci.co.uk/news/1024/cpsprodpb/15951/production/_117310488_16.jpg.webp");
+}
+
+.bg2 {
+  background-image: url("https://ichef.bbci.co.uk/news/1024/cpsprodpb/BFCD/production/_117310194_01.jpg.webp");
+}
