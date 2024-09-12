@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    background-color: #4caf50;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* การตั้งค่าสำหรับโลโก้ */
+.logo {
+    padding: 0;
+    margin-right: auto; /* ทำให้โลโก้อยู่ซ้ายสุด */
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px; /* กำหนดความสูงของโลโก้ */
+    width: auto;
+    padding: 5px 10px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+}
+
+.navbar a:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+
+.content {
+    padding: 16px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.member {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    background-color: #e3f2fd;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.member:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #bbdefb;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.member:hover img {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: #333;
+}
+
+#scrollToSectionBtn {
+    position: fixed;
+    bottom: 140px; /* ระยะห่างจากขอบล่าง */
+    right: 20px;  /* ระยะห่างจากขอบขวา */
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollToSectionBtn:hover {
+    background-color: #138496;
+}
+@media only screen and (max-width: 600px) {
+    .navbar a {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .member {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 8px;
+    }
+}
+/* ส่วน Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer a:hover {
+    color: #4caf50;
+    transform: scale(1.05);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.skills-box {
+    background-color: rgba(249, 249, 249, 0.9); /* สีพื้นหลังโปร่งแสง */
+    border: 1px solid rgba(221, 221, 221, 0.8); /* ขอบโปร่งแสง */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* เพิ่มการเปลี่ยนแปลงแอนิเมชัน */
+}
+
+.skills-box h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: rgba(224, 224, 224, 0.9); /* สีพื้นหลังโปร่งแสง */
+    border: 1px solid rgba(204, 204, 204, 0.8); /* ขอบโปร่งแสง */
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+    flex: 1 1 auto;
+    min-width: 120px; /* กำหนดขนาดขั้นต่ำของกล่อง */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* เพิ่มการเปลี่ยนแปลงแอนิเมชัน */
+}
+
+.skill-item:hover {
+    background-color: rgba(200, 200, 200, 0.9); /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+    transform: translateY(-10px); /* ลอยขึ้น 10px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+.skill-item:active {
+    transform: translateY(-5px); /* ลดการลอยเมื่อกด */
+}
